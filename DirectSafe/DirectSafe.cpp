@@ -8,6 +8,7 @@
 * @author	Alopex/Helium
 * @version	v1.00a
 * @date		2018-1-3	v1.00a	alopex	Create Project.
+* @date		2018-1-4	v1.01a	alopex	Modify inline Key Words.
 */
 #include "DirectCommon.h"
 #include "DirectSafe.h"

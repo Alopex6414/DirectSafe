@@ -6,8 +6,9 @@
 * @file		DirectSafe.h
 * @brief	This Program is DirectSafe DLL Project.
 * @author	Alopex/Helium
-* @version	v1.00a
+* @version	v1.01a
 * @date		2018-1-3	v1.00a	alopex	Create Project.
+* @date		2018-1-4	v1.01a	alopex	Modify inline Key Words.
 */
 #pragma once
 
@@ -28,8 +29,8 @@
 class DIRECTSAFE_API DirectSafe
 {
 public:
-	inline DirectSafe();
-	inline ~DirectSafe();
+	DirectSafe();
+	~DirectSafe();
 };
 
 //Variable Definition
