@@ -6,9 +6,10 @@
 * @file		DirectSafe.cpp
 * @brief	This Program is DirectSafe DLL Project.
 * @author	Alopex/Helium
-* @version	v1.00a
+* @version	v1.02a
 * @date		2018-1-3	v1.00a	alopex	Create Project.
 * @date		2018-1-4	v1.01a	alopex	Modify inline Key Words.
+* @date		2018-4-12	v1.02a	alopex	Add Macro Call Mode.
 */
 #include "DirectCommon.h"
 #include "DirectSafe.h"
@@ -48,7 +49,7 @@ DirectSafe::~DirectSafe()
 // @Para: None
 // @Return: None
 //------------------------------------------------------------------
-void DirectSafeInit()
+void DIRECTSAFE_CALLMODE DirectSafeInit()
 {
 	if (g_bDirectSafe) InitializeCriticalSection(&g_csDirect);
 }
@@ -60,7 +61,7 @@ void DirectSafeInit()
 // @Para: None
 // @Return: None
 //------------------------------------------------------------------
-void DirectSafeDelete()
+void DIRECTSAFE_CALLMODE DirectSafeDelete()
 {
 	if (g_bDirectSafe) DeleteCriticalSection(&g_csDirect);
 }
